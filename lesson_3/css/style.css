@@ -1,0 +1,140 @@
+@import url("reset.css");
+
+/* ------------------------------------------------------ */
+* a {
+   color: rgb(228, 16, 175);
+}
+
+.header__titel {
+   color: rgb(233, 9, 9);
+}
+
+/* ------------------------------------------------------ */
+.page > div {
+   color: chocolate;
+}
+
+.page__opis .page__text > p {
+   color: rgb(55, 4, 196);
+}
+
+.page__text span {
+   color: darkgreen;
+}
+
+/* ------------------------------------------------------ */
+.page__choleric h2 {
+   color: crimson;
+}
+
+.page__choleric-text * {
+   color: darkgreen;
+}
+
+.page__choleric-text span {
+   color: aqua;
+}
+
+/* ------------------------------------------------------ */
+[class*="__sanguine"] {
+   color: green;
+}
+
+.page__titel-sanguine {
+   color: blue;
+}
+
+.page__sanguine-text p > span {
+   color: blue;
+}
+
+/* ------------------------------------------------------ */
+.page__phlegmatic ~ div {
+   color: black;
+}
+
+.page__titel-phlegmatic {
+   color: blueviolet;
+}
+
+.page__phlegmatic-text span {
+   color: rgb(255, 81, 0);
+}
+
+#punct_3 {
+   color: blue;
+}
+
+/* ------------------------------------------------------ */
+.page__melancholic,
+.page__titel-melancholic,
+.page__melancholic-text {
+   color: darkblue;
+}
+
+.page__melancholic-text > p span {
+   color: crimson;
+}
+
+/* ------------PROJEKT------------------------------------------ */
+
+.main__body * p {
+   color: brown;
+}
+
+/* ------------------------------------------------------ */
+.main__project > h3 {
+   color: blueviolet;
+}
+
+.main__project-text p {
+   color: rgb(23, 9, 221);
+}
+
+p > span {
+   color: chocolate;
+}
+
+/* ------------------------------------------------------ */
+[class*="__about-title"] {
+   color: green;
+}
+
+.main__about-text > p {
+   color: rgb(243, 27, 214);
+}
+
+.main__about-text > p > span {
+   color: blue;
+}
+
+/* ------------------------------------------------------ */
+.main__who > div > p {
+   color: blueviolet;
+}
+
+.main__who h3 {
+   color: aqua;
+}
+
+.main__who-text p > * {
+   color: chartreuse;
+}
+
+/* ------------------------------------------------------ */
+.main__why div {
+   color: chocolate;
+}
+
+.main__why-title {
+   color: crimson;
+}
+
+.main__why-text p > mark {
+   color: blue;
+}
+
+/* ------------------------------------------------------ */
+.basement .basement__linck a {
+   color: rgb(0, 1, 39);
+}
