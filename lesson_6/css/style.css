@@ -1,0 +1,175 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+
+body {
+   font-family: "Poppins", sans-serif;
+   color: #6c757d;
+   font-size: 14px;
+   font-weight: 300;
+
+}
+
+/* Обмежуючий контейнер */
+[class*="__container"] {
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 80px 15px 0 15px;
+}
+
+[class*="__container-two"] {
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 0 15px 0 15px;
+   margin-bottom: 100px;
+}
+
+[class*="__wrap"] {
+   max-width: 816px;
+   margin: 0 auto 80px auto;
+}
+
+[class*="__wrap-two"] {
+   max-width: 816px;
+   margin: 0 auto 100px auto;
+}
+
+img {
+   width: 100%;
+}
+
+p {
+   line-height: 1.8;
+   margin-bottom: 30px;
+}
+/* -------------------- */
+
+.main__data-time {
+   font-size: 12px;
+   line-height: 1.6;
+   margin-bottom: 15px;
+
+}
+
+.main__data-time span {
+   font-weight: 700;
+}
+
+.main__text {
+   margin-bottom: 80px;
+}
+
+
+.main__titel {
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 1.6;
+   color: #212529;
+   margin-bottom: 40px;
+   max-width: 605px;
+}
+
+.main__img-big {
+   margin-bottom: 80px;
+   border-radius: 5px;
+   overflow: hidden;
+}
+
+
+.main_imges {
+   font-size: 0;
+   margin-bottom: 80px;
+}
+
+.main__imeges-wrap-one,
+.main__imeges-wrap-two {
+   max-width: 605px;
+   border-radius: 5px;
+   display: inline-block;
+
+}
+
+.main__imeges-wrap-one {
+   margin-right: 30px;
+}
+
+.main__linck {
+   font-weight: 700;
+   line-height: 1.6;
+   font-size: 25px;
+   text-align: center;
+
+}
+
+.main__linck a {
+   display: inline-block;
+   padding: 10px;
+   color: darkblue;
+   text-transform: uppercase;
+}
+
+.main__imeges-wrap-right,
+.main__imeges-wrap {
+   display: inline-block;
+   max-width: 605px;
+   border-radius: 5px;
+
+}
+
+
+.main__imeges-wrap-right {
+   margin-right: 30px;
+}
+
+.main__img-titel {
+   margin-bottom: 100px;
+}
+
+.main__text-margin {
+   margin-bottom: 100px;
+}
+
+.main__imeges-container-wrap {
+   margin-bottom: 64px;
+}
+
+.main_imges-two {
+   display: inline-block;
+   font-size: 0;
+   margin-bottom: 30px;
+}
+
+.main__imeges-points {
+   font-size: 0;
+   max-width: 54px;
+   margin: 0 auto;
+}
+
+/*
+border 
+border: 10px solid transparent;
+Основні стили - solid dotted dashed double
+*/
+/*
+outline 
+Універсальна властивість встановлює товщину,
+стиль та колір обводки навколо елемента 
+Властивість не успадковується
+*/
+/*
+border-radius
+*/
+/*
+box-shadow
+box-shadow: зсув_по_гориз зсув_по_верт радіус(розмиття) розмір колір
+inset - тінь в середені об'єкту
+*/
+/*
+opacity
+*/
+/*
+visibility
+Управляє відображенням елемента
+visible - (за замовченням) відображає об'єкт
+hidden - ховає об'єкт (з об'єктом не можна взаємодіяти)
+*/
