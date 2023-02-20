@@ -1,0 +1,334 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap);
+
+/* ====================================================== */
+
+/* =======================vence=============================== */
+
+.vence__section {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 300;
+   font-size: 12px;
+   line-height: 1.67;
+   color: #E5E5E5;
+   background: url(../img/vence/fonds.png) center/ cover no-repeat fixed;
+   width: 100%;
+   height: 600px;
+}
+
+.vence__container {
+   max-width: 1270px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.vence__body {
+   max-width: 605px;
+   padding-top: 330px;
+   padding-bottom: 100px;
+}
+
+.vence__body > * {
+   margin-bottom: 15px;
+}
+
+.vence__body > *:last-child {
+   margin-bottom: 0px;
+}
+
+.vence__body h1 {
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 1.6;
+   color: #F8F9FA;
+}
+
+.vence__body > p {
+   max-width: 360px;
+}
+
+
+/* ===================ultra=================================== */
+
+
+.ultra__section {
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #637381;
+   width: 100%;
+   padding: 81px 0 83px 0;
+   background: #F4F7FF url(../img/ultra/fonds.png) 480px 0px/ cover no-repeat;
+}
+
+.ultra__container {
+   max-width: 1200px;
+   padding: 0 15px;
+   margin: 0 auto;
+
+}
+
+.ultra__body {
+   display: inline-block;
+   max-width: 570px;
+   margin-right: 179px;
+   padding-top: 64px;
+}
+
+.ultra__body > * {
+   margin-bottom: 15px;
+}
+
+.ultra__body > :first-child {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 1.33;
+   color: #3056D3;
+   margin-bottom: 13px;
+}
+
+.ultra__body h2 {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.25;
+   color: #212B36;
+   max-width: 470px;
+   margin-bottom: 15px;
+}
+
+.ultra__body p {
+   margin-bottom: 35px;
+}
+
+.ultra__linck a {
+   display: inline-block;
+   background: #3056D3;
+   border-radius: 30px;
+   font-weight: 600;
+   color: #FFFFFF;
+   padding: 10px 30px;
+   border: solid 2px #3056D3;
+}
+
+.ultra__linck a:hover {
+   background: #152350;
+}
+
+.ultra__linck a:active {
+   background: #9bb40d;
+}
+
+.ultra__linck a:focus {
+   border: #8f422f solid 2px;
+}
+
+
+.ultra__body > *:last-child {
+   margin-bottom: 0px;
+}
+
+.ultra__img {
+   display: inline-block;
+   vertical-align: top;
+   font-size: 0;
+}
+
+.ultra__img-wrap {
+   max-width: 272px;
+
+}
+
+
+.ultra__img-wrap img {
+   width: 100%;
+   object-fit: cover;
+}
+
+
+
+/* ========================unorder============================== */
+.unorder__section {
+   font-family: 'Inter', sans-serif;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1;
+   color: #637381;
+   background-color: #FFFFFF;
+   padding: 100px 0 150px 0;
+}
+
+.unorder__container {
+   max-width: 1140px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.unorder__container h2 {
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 1.16;
+   color: #212B36;
+}
+
+.unorder__container h2:not(:last-child) {
+   margin-bottom: 45px;
+}
+
+
+
+ul {
+   display: inline-block;
+   margin-right: 91px;
+   max-width: 317px;
+   vertical-align: middle;
+   padding-left: 8px;
+}
+
+li:not(:last-child) {
+   margin-bottom: 18px;
+}
+
+.unorder__body-lists {
+   padding-left: 10px;
+}
+
+.unorder__body-lists:not(:last-child) {
+   margin-bottom: 70px;
+
+}
+
+.unorder__body-lists > *:last-child {
+   margin-right: 0;
+}
+
+.unorder__list-punct ul {
+   max-width: 264px;
+   margin-right: 131px;
+   display: inline-block;
+}
+
+.unorder__list-punct > li {
+   line-height: 0.93;
+   padding-left: 5px;
+}
+
+.unorder__list-punct > li::before {
+   content: "";
+   display: inline-block;
+   background: url(../img/components/svg/point.svg) 0 0 no-repeat;
+   height: 8px;
+   width: 8px;
+   margin-left: -10px;
+   margin-right: 18px;
+
+}
+
+li::before {
+   content: "";
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+   margin-left: -10px;
+   margin-right: 10px;
+   vertical-align: middle;
+
+}
+
+.unorder__list-blue li::before {
+   background: url(../img/components/svg/blue-tick.svg) no-repeat;
+}
+
+.unorder__list-green li::before {
+   background: url(../img/components/svg/green-tick.svg) no-repeat;
+}
+
+.unorder__list-cross li::before {
+   background: url(../img/components/svg/cross.svg) no-repeat;
+}
+
+.unorder__list-arrow li::before {
+   background: url(../img/components/svg/arrow-right.svg) no-repeat;
+}
+
+.unorder__list-star li::before {
+   background: url(../img/components/svg/star.svg) no-repeat;
+}
+
+
+
+
+
+/* =============== Псевдокласи ================= */
+/*
+:hover
+.link:hover + .text {
+	color: green;
+}
+.text__item {
+	background-color: #794f45;
+	padding: 15px;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+
+	transition: all 0.8s;
+}
+.text:hover .text__item {
+	visibility: visible;
+	opacity: 1;
+}
+:visited
+:active 
+:focus
+:target
+*/
+
+/* Псевдокласи положення у коді */
+/*
+:first-child
+Звернення до першого елементу в коді
+.text p:first-child {
+	text-transform: uppercase;
+}
+:first-of-type
+Звернення до першого вказаного 
+об'єкту в коді
+.text p:first-of-type {
+	text-transform: uppercase;
+}
+:last-child
+Звернення до останього 
+елементу в коді
+.text p:last-child {
+	text-transform: uppercase;
+}
+:last-of-type
+Звернення до останього 
+вказаного об'єкту в коді
+.text p:last-of-type {
+	text-transform: uppercase;
+}
+:nth-child(порядковий номер елементу)
+Звернення до конкретного елементу в коді
+odd - через один не парні
+even - через один парні
+.text p:nth-child(06) {
+	background-color: #7a956b;
+}
+:not(селектор) 
+Псевдоклас виключення
+.text p:not(:last-child) {
+	margin-bottom: 20px;
+}
+*/
+/* Псевдоелементи */
+
+/* Анатомія псевдоелементів */
+/*
+::before {}
+::after {}
+/*
