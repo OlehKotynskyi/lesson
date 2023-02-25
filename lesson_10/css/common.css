@@ -1,0 +1,21 @@
+.button {
+	background-color: blue;
+	color: #fff;
+	display: inline-block;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 5px 15px;
+}
+.button:hover {
+	background-color: #fff;
+	color: blue;
+}
+
+.button_white {
+	background-color: #fff;
+	color: blue;
+}
+.button_white:hover {
+	background-color: blue;
+	color: #fff;
+}
