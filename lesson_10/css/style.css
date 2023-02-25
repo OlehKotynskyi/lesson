@@ -1,0 +1,77 @@
+@import url("reset.css");
+@import url("common.css");
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1230px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* 
+	До БЕМ-блоків заборонено застосовувати зовнішні відступи (margin)
+	та інші властивості які впливають на оточення
+*/
+
+/* (!) Це помилка */
+.page-header {
+	margin-bottom: 86px;
+}
+
+/* 
+	До БЕМ-елементу дозволено застосовувати зовнішні відступи (margin)
+	та інші властивості які впливають на оточення
+*/
+/* 
+	До БЕМ-модифікатору дозволено застосовувати зовнішні відступи (margin)
+	та інші властивості які впливають на оточення
+*/
+
+/* Немає помилки */
+.page-header_margin-about {
+	margin-bottom: 86px;
+}
+/* Немає помилки */
+.page-header_margin-services {
+	margin-bottom: 57px;
+}
+
+.block {
+}
+.block__title {
+	color: #000;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.block__title_font-size-35 {
+	font-size: 35px;
+}
+.block__title_green {
+	color: green;
+}
+
+.page-header {
+}
+.page-header__container {
+}
+.page-header__title {
+}
+.page-header__text {
+}
+
+.about {
+}
+.about__page-header {
+	margin-bottom: 86px;
+}
+
+.services {
+}
+.services__page-header {
+	margin-bottom: 57px;
+}
