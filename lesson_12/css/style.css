@@ -1,0 +1,403 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Gulzar:regular);
+
+body {
+   font-family: "Gulzar", sans-serif;
+   background-color: #6d6c6c;
+   color: #fff;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+/* ==================================================== */
+
+.body {
+   position: relative;
+   background-color: rgba(226, 215, 215, 0.459);
+   width: 150px;
+   height: 150px;
+   perspective-origin: center;
+   perspective: 400px;
+   margin: 0 auto;
+}
+
+.transform-style__body {
+   transform-style: preserve-3d;
+}
+
+.body__content {
+   position: absolute;
+   width: 150px;
+   height: 150px;
+   background-color: rgba(104, 184, 238, 0.884);
+   transition: all 0.8s ease 0s;
+   cursor: pointer;
+}
+
+.titel {
+   text-align: center;
+   text-transform: uppercase;
+   color: rgba(226, 226, 216, 0.959);
+   letter-spacing: 3px;
+   margin-bottom: 10px;
+}
+
+.transform__titel {
+   text-align: center;
+   padding: 20px;
+   font-size: 35px;
+}
+
+.transform__container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 30px 15px;
+}
+
+.transform__container > *:not(:last-child) {
+   margin-right: 49.2px;
+
+}
+
+.translate,
+.scale,
+.rotate,
+.skew,
+.matrix,
+.perspective,
+.translate3D,
+.scale3D,
+.rotate3d,
+.matrix3d,
+.multi3d,
+.transform-style,
+.backface-visibility {
+   display: inline-block;
+}
+
+/* ===================translate=================================== */
+.body__content-translate:hover {
+   transform: translate(15px, 15px);
+}
+
+/* ===================scale=================================== */
+.body__content-scale:hover {
+   transform: scale(1.2);
+}
+
+/* ===================rotate=================================== */
+
+.body__content-rotate:hover {
+   transform: rotate(20deg);
+}
+
+/* ===================skew=================================== */
+.body__content-skew:hover {
+   transform: skew(15deg);
+}
+
+/* ===================matrix=================================== */
+.matrix__body:hover .body__content-matrix {
+   transform: matrix(0, 1, 1, 1, 1, 2);
+}
+
+/* ===================perspective=================================== */
+.body__content-perspective:hover {
+   transform: rotateX(50deg);
+}
+
+/* ===================translate3D=================================== */
+.body__content-translate3D:hover {
+   transform: translate3d(20px, 20px, 40px);
+   box-shadow: rgb(150, 137, 137) -8px -8px 8px;
+}
+
+/* ===================scale3D=================================== */
+.body__content-scale3D:hover {
+   transform: scale3D(1.2, 1.4, 5);
+}
+
+/* ===================rotate3d=================================== */
+.body__content-rotate3d:hover {
+   transform: rotate3d(1, 1, 1, 45deg);
+}
+
+/* ===================matrix3d=================================== */
+.matrix3d__body:hover  .body__content-matrix3d{
+   transform: matrix3d(1.786615, -0.253346, 0, 0.000939, 0.279549, 1.539224, 0, -0.001712, 0, 0, 1, 0, 132, 103, 0, 2);
+}
+
+/* ===================multi3d=================================== */
+.body__content-multi3d:hover {
+   transform: translate3d(15px, 15px, 20px) rotate3d(1, 1, 1, 20deg);
+}
+
+/* ===================transform-style=================================== */
+.body__content-transform-style:hover {
+   transform: rotateY(50deg);
+}
+
+/* ===================backface-visibility=================================== */
+.backface-visibility {
+   position: relative;
+   left: 50%;
+   top: 0;
+   transform: translate(-50%, 0);
+}
+
+.body__content {
+   position: relative;
+   width: 150px;
+   height: 150px;
+   transition: all 0.8s ease 0s;
+   transform-style: preserve-3d;
+}
+
+.body__flip-front,
+.body__flip-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+span {
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: rgba(177, 94, 27, 0.877);
+   letter-spacing: 5px;
+   text-transform: uppercase;
+}
+
+.body__flip-front {
+   z-index: 2;
+   transform: rotateY(0deg);
+   background-color: rgb(104, 184, 238);
+   backface-visibility: hidden;
+}
+
+.body__flip-back {
+   transform: rotateY(-180deg);
+   background-color: rgb(240, 169, 77);
+}
+
+.backface-visibility__body:hover .body__content {
+   transform: rotateY(-180deg);
+}
+
+
+/* ===================automobile=================================== */
+
+.automobile__container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 30px;
+   font-size: 0;
+   padding-bottom: 50px;
+}
+
+.car {
+   position: relative;
+   display: inline-block;
+   transform: translate(100%, 0%);
+   
+}
+
+.car::after {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 3px;
+   height: 100%;
+   background-color:#363232;
+   top: 0;
+   left: 32%;
+}
+
+.body-car {
+   position: relative;
+}
+.roof-car {
+   border-bottom: solid #363232 3px;
+   display: inline-block;
+   position: relative;
+}
+
+.roof-car__top {
+   display: inline-block;
+   width: 140px;
+   border-bottom: 70px solid #7c4545;
+   border-left: 60px solid transparent;
+}
+
+.roof-car__top-front {
+   border-right: 120px solid transparent;
+   border-left: 0px solid transparent;
+}
+
+.roof-car__window-frontal {
+   position: absolute;
+   width: 155px;
+   border-bottom: 60px solid rgba(173, 169, 169, 0.932);
+   border-right: 105px solid transparent;
+   top: 9px;
+   right: 0px;
+}
+
+.roof-car__window-beack {
+   position: absolute;
+   width: 97px;
+   border-bottom: 50px solid rgba(173, 169, 169, 0.932);
+   border-left: 40px solid transparent;
+   top: 9px;
+   left: 10px;
+}
+
+.body-car__center {
+   display: inline-block;
+   width: 180px;
+   height: 70px;
+   background-color: #7c4545;
+}
+
+.body-car__center-top-front {
+   position: relative;
+   border-radius: 0 20px 60px 0;
+}
+
+.body-car {
+   position: relative;
+}
+
+.body-car__center::after {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 10px;
+   height: 22px;
+   background-color: #363232;
+   top: 0;
+   left: 0;
+   border-radius: 50%;
+}
+
+.body-car__center::before {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 10px;
+   height: 20px;
+   background-color: #e6b20b;
+   top: 1px;
+   left: -3px;
+   border-radius: 50%;
+   z-index: 2;
+}
+
+.wheel-car {
+   position: absolute;
+   top: 30%;
+   left: 8px;
+}
+
+.wheel-car > * {
+   display: inline-block;
+}
+
+.wheel-car__to,
+.wheel-car__after {
+   position: relative;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   margin-right: 130px;
+   background-color: #383737;
+   border: dashed rgba(22, 13, 13, 0.733) 5px;
+   z-index: 2;
+}
+
+.wheel-car__after {
+   margin-right: 0px;
+}
+
+.wheel-car__span-center {
+   position: absolute;
+   padding: 20px;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: linear-gradient(45deg, rgba(245, 246, 246, 1) 0%, rgba(219, 220, 226, 1) 21%, rgba(184, 186, 198, 1) 49%, rgba(221, 223, 227, 1) 80%, rgba(245, 246, 246, 1) 100%);
+}
+
+.body-car__span-stroke {
+   position: absolute;
+   top: 60px;
+   left: 48px;
+   width: 84px;
+   height: 85px;
+   background-color: #636262;
+   border-radius: 50%;
+}
+
+.body-car__center-top-front > .body-car__span-stroke {
+   position: absolute;
+   top: 57px;
+   left: 78px;
+   width: 84px;
+   height: 85px;
+   background-color: #636262;
+   border-radius: 50%;
+}
+
+.body-car__center .body-car__span-handle {
+   position: absolute;
+   top: 15px;
+   left: 35%;
+   width: 5px;
+   height: 15px;
+   background-color: rgba(139, 120, 120, 0.884);
+}
+
+.body-car__span-handle::after {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 3px;
+   height: 8px;
+   background-color: #363232;
+   top: 3px;
+   left: 1px;
+}
+
+.body-car__center-top-front::after {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 10px;
+   height: 22px;
+   background-color: #363232;
+   top: 2px;
+   left: 170px;
+   border-radius: 50%;
+}
+
+.body-car__center-top-front::before {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 10px;
+   height: 20px;
+   background-color: #e6b20b;
+   top: 3px;
+   left: 173px;
+   border-radius: 50%;
+   z-index: 2;
+}
