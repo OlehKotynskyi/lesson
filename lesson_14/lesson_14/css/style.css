@@ -1,0 +1,192 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+
+body {
+   font-family: "Poppins", sans-serif;
+   font-weight: 300;
+   font-size: 12px;
+   line-height: 1.66;
+   background-color: #F8F9FA;
+   color: #495057;
+
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1270px;
+   margin: 0 auto;
+   padding: 80px 15px;
+}
+
+/* ==========================categories================================ */
+
+.categories {}
+
+
+.сategories__quantity {
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 2.08;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   column-gap: 10px;
+   padding: 20px 0px;
+}
+
+.сategories__quantity:not(:last-child) {
+   margin-bottom: 25px;
+}
+
+.сategories__cards {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+/* =============================quantity============================= */
+
+
+
+.quantity__add {
+   margin-left: -10px;
+
+}
+
+.quantity__linck {
+   display: inline-flex;
+   transition: color 0.3s;
+   padding: 0px 10px;
+}
+
+.quantity__linck:hover {
+   color: rgba(73, 80, 87, 0.5);
+}
+
+
+/* =============================number-columns============================= */
+
+.number-columns {
+   margin: 0 -10px;
+}
+
+.number-columns__linck {
+   display: inline-flex;
+   padding: 0px 10px;
+   transition: color 0.4s;
+}
+
+.number-columns__linck:hover {
+   color: rgba(73, 80, 87, 0.5);
+}
+
+/* =============================quantity============================= */
+
+.cards {}
+
+.cards__list {
+   margin: 0 -15px;
+}
+
+.list {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 45px;
+}
+
+.list__item {
+   display: flex;
+   flex: 1 1 393px;
+   flex-direction: column;
+   padding: 0 15px;
+
+}
+
+.list__banner {}
+
+.list__banner:not(:last-child) {
+   margin-bottom: 30px;
+}
+
+.list__img {
+   position: relative;
+   min-width: 393px;
+   overflow: hidden;
+}
+
+.list__linck-img img {
+   width: 100%;
+   transition: all 0.5s;
+}
+
+.list__linck-img:hover img {
+   transform: scale(1.1);
+}
+
+.list__linck {
+   display: inline-flex;
+   position: absolute;
+   right: 30px;
+   top: 30px;
+   font-weight: 700;
+   font-size: 8px;
+   line-height: 2.5;
+   text-align: center;
+   text-transform: uppercase;
+   color: #F8F9FA;
+   padding: 2px 12px;
+   background: rgba(33, 37, 41, 0.3);
+   border-radius: 3px;
+   transition: all 0.5s;
+}
+
+.list__linck:hover {
+   transform: scale(1.2);
+   background: rgba(111, 117, 122, 0.3);
+}
+
+.list__opis {
+   border-bottom: 1px solid #E5E5E5;
+   row-gap: 15px;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.list__opis:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.list__data {}
+
+.list__titel {
+   font-weight: 700;
+   font-size: 23px;
+   line-height: 1.6;
+   color: #212529;
+   transition: 0.3s;
+
+}
+
+.list__titel:hover {
+   color: rgba(73, 80, 87, 0.5);
+   text-decoration: underline;
+}
+
+.list__text {
+   flex-grow: 1;
+   margin-bottom: 15px;
+
+}
+
+.list__signature {}
