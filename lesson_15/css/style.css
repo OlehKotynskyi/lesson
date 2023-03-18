@@ -243,7 +243,12 @@ body {
    display: flex;
    column-gap: 80px;
 }
-
+.design__data a {
+   transition: color 0.4s;
+}
+.design__data a:hover {
+   color: #000000;
+}
 
 .design__galery {}
 
