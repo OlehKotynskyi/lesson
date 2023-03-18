@@ -1,0 +1,279 @@
+@import url("reset.css");
+@import url("common.css");
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700&display=swap);
+
+body {
+   font-family: "Poppins", sans-serif;
+   font-size: 18px;
+   line-height: 1.6;
+   font-weight: 400;
+   color: #9C9C9C;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+/* ===============================page==================================== */
+
+.page {}
+
+.page__line {
+   padding: 100px 0px 0px;
+}
+
+.page__line:not(:last-child) {
+   margin-bottom: 40px;
+}
+
+.page__consultation {
+   padding: 0px 0px 50px;
+}
+
+.page__room {
+   padding: 50px 0px 100px;
+}
+
+/* ================================line=================================== */
+
+.line {}
+
+.line__container {}
+
+.line__wrapp {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   flex: 0 1 600px;
+   column-gap: 26px;
+   row-gap: 15px;
+   width: 100%;
+}
+
+.line__titel {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #000000;
+   text-transform: uppercase;
+}
+
+.line__row {
+   position: relative;
+   flex: 0 1 38.666667%;
+}
+
+.line__row span {
+   position: absolute;
+   top: -2px;
+   left: 0;
+   height: 2px;
+   width: 463px;
+   background-color: #000000;
+   width: 100%;
+}
+
+
+/* ================================consultation=================================== */
+
+.consultation {}
+
+.consultation__container {}
+
+.consultation__column {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 40px;
+}
+
+.consultation__item {}
+
+/* =====================================item-consultation============================== */
+
+.item-consultation {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   
+}
+
+.item-consultation__img {
+   flex: 0 1 62.166667%;
+   
+}
+
+.item-consultation__img {
+   overflow: hidden;
+}
+
+.item-consultation__img img {
+   width: 100%;
+   transition: transform 0.8s;
+}
+
+.item-consultation__img img:hover {
+   transform: scale(1.05);
+
+}
+
+.item-consultation__body {
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   flex: 0 1 37.833333%;
+   row-gap: 20px;
+   padding-left: 120px;
+}
+
+.item-consultation__titel a {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 1.4;
+   color: #333333;
+   transition: color 0.4s ease;
+}
+
+.item-consultation__titel:hover a {
+   color: #9C9C9C;
+   transition: color 0.4s ease;
+}
+
+.item-consultation__text {}
+
+/* ==========================room========================================= */
+
+
+.room__header {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   color: #000000;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 50px;
+}
+
+.header__wrapper {
+   display: flex;
+   max-width: 520px;
+   text-align: center;
+   flex-direction: column;
+   row-gap: 40px;
+
+}
+
+.header__wrapper:not(:last-child) {
+   margin-bottom: 53px;
+
+}
+
+.header__titel {
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 1.4;
+}
+
+.header__text {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+.header__img {
+   max-width: 100%;
+   overflow: hidden;
+}
+
+.header__img img {
+   width: 100%;
+   transition: transform 0.8s;
+}
+.header__img img:hover {
+   transform: scale(1.05);
+}
+
+/* ==========================room========================================= */
+
+.room__design {}
+
+.design {}
+
+.design__opis {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -15px;
+   margin-bottom: 80px;
+}
+
+.design__column-text {
+   display: flex;
+   flex-direction: column;
+   flex: 0 0 50%;
+   padding: 0 15px;
+}
+
+.design__titel:not(:last-child) {
+   margin-bottom: 24px;
+}
+
+.design__text {
+   display: flex;
+   flex-direction: column;
+   row-gap: 30px;
+   flex-grow: 1;
+}
+
+
+.design__data {
+   display: flex;
+   column-gap: 80px;
+}
+
+
+.design__galery {}
+
+.galery {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -16px;
+   row-gap: 32px;
+}
+
+.galery__column {
+   width: 100%;
+   flex: 0 0 50%;
+   padding: 0 16px;
+}
+
+.galery__column-big {
+   flex: 1 1 100%;
+}
+
+.galery__img {
+   overflow: hidden;
+}
+
+.galery__img img:hover{
+   transform: scale(1.05);
+}
+
+.galery__img img {
+   width: 100%;
+   height: 100%;
+   transition: transform 0.8s;
+}
