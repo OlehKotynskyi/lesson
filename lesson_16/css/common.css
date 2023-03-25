@@ -1,0 +1,54 @@
+.button {
+   font-family: 'Oswald';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.5;
+   display: inline-flex;
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   background-color: #000000;
+   padding: 10px 35px;
+   transition: all 0.5s;
+}
+
+.button:hover {
+   color: #000000;
+   background-color: #FFFFFF;
+}
+
+.button:focus-visible {
+   outline: 1px solid #fd0101;
+   border-radius: 5px;
+}
+.titel {
+   font-family: "Oswald", sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 2.83;
+   color: #000000;
+}
+
+.imput-width {
+   padding: 12.5px 16px;
+   width: 100%;
+}
+
+.imput-width::placeholder {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.25;
+   color: #3F3F3F;
+}
+
+.imput-width:focus-visible {
+   outline: 1px solid #3F3F3F;;
+   border-radius: 5px;
+}
+
+.label-necessarily::after {
+   content: "*";
+   color: red;
+   padding-left: 5px;
+}
