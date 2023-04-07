@@ -414,9 +414,8 @@ body {
    display: flex;
    align-items: center;
    top: 100px;
-   height: 100vh;
-   /*padding-top: 277px;
-   padding-bottom: 197px;*/
+   padding-top: 277px;
+   padding-bottom: 197px;
 }
 
 .fonds:not(:last-child) {
