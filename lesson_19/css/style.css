@@ -817,7 +817,6 @@ body {
 .prodducts-cloth__price span {
    color: #B1B4B7;
    text-decoration: line-through;
-   text-decoration: none;
 }
 
 .prodducts-cloth__price span:not(:last-child) {
