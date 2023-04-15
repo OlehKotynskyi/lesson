@@ -1,0 +1,32 @@
+.button {
+   font-family: 'Oswald';
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 1.5;
+   letter-spacing: 0.5px;
+   text-transform: uppercase;
+   color: #000000;
+   padding: 15px 40px;
+   border: 2px solid #000000;
+   transition: all 0.3s;
+
+   @media (max-width: 1480px) {
+      padding: 10px 20px;
+      font-size: 16px;
+   }
+
+   @media (max-width: 767.98px) {
+      padding: 6.5px 15.7px;
+      font-size: 10px;
+   }
+
+   @media (any-hover: hover) {
+      &:hover {
+         background-color: #000000;
+         color: #fff;
+      }
+   }
+}
