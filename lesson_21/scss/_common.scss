@@ -1,0 +1,100 @@
+.text-light {
+   color: #E5E5E5;
+}
+
+.data-light {
+   color: #E5E5E5;
+}
+
+.logo-style {
+   font-weight: 700;
+   font-size: rem(18);
+   line-height: 1.38;
+   text-transform: uppercase;
+   color: #F8F9FA;
+   position: relative;
+   padding-right: 8px;
+   transition: color 0.3s;
+   z-index: 2;
+
+   &::after {
+      content: '';
+      position: absolute;
+      background-color: #DDBEA9;
+      bottom: 5px;
+      right: 0;
+      width: rem(5);
+      height: rem(5);
+      border-radius: 50%;
+   }
+
+   @media (any-hover: hover) {
+      &:hover {
+         color: #DDBEA9;
+      }
+   }
+}
+
+.linck-gallery {
+   font-weight: 700;
+   font-size: rem(8);
+   line-height: 2.5;
+   /* 20px/8 */
+   text-align: center;
+   color: #F8F9FA;
+   background-color: rgba(33, 37, 41, 0.3);
+   border-radius: 3px;
+   padding: rem(3) rem(12);
+   transition: all 0.3s;
+
+   @media (any-hover: hover) {
+      &:hover {
+         color: #212529;
+         transform: scale(1.04);
+      }
+   }
+}
+
+.sub-titel-light,
+.sub-titel {
+   font-weight: 500;
+   font-size: rem(16);
+   line-height: 1.56;
+   color: #212529;
+}
+
+.sub-titel-light {
+   color: #F8F9FA;
+}
+
+.title,
+.title-light {
+   font-weight: 700;
+   font-size: rem(25);
+   line-height: 1.6;
+   /* or 160% */
+   color: #212529;
+
+   @media (max-width: 970px) {
+      font-size: rem(20);
+      line-height: 1.4;
+   }
+
+   @media (max-width: 767.98px) {
+      font-size: rem(18);
+   }
+}
+
+.title-light {
+   color: #F8F9FA;
+}
+.sub-titel__linck,
+.title__linck {
+   transition: all 0.3s;
+
+   @media (any-hover: hover) {
+      &:hover {
+         color: #CCD5AE;
+      }
+   }
+}
